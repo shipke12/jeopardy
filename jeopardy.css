@@ -1,6 +1,9 @@
-﻿
-.board {
+﻿body {
     background-color: blue;
+}
+
+.board {
+    margin: 10%;
 }
 
 .board a {
