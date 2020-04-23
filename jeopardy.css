@@ -1,16 +1,18 @@
 ﻿body {
     background-color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .board {
     margin: 10%;
 }
 
-.board a {
+.board > a {
     color: yellow;
 }
 
-table {
-    border-color: yellow;
+table, tr, td{
+    border: 5px solid yellow;
 }
 
