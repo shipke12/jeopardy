@@ -28,7 +28,11 @@ table {
 
 .finalJeopardy {
     margin: 20px;
+}
+
+.finalJeopardy a {
     color: white;
+    font-size: 16pt;
 }
 
 table, tr, td, th {
@@ -45,6 +49,10 @@ td {
 a {
     color: yellow;
     font-size: 36pt;
+}
+
+a:link {
+    color: yellow;
 }
 
 a:visited {
