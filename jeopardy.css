@@ -4,7 +4,6 @@
     font-weight: bold;
     color: white;
     margin: 0;
-    height: 100%;
 }
 
 table {
@@ -13,6 +12,8 @@ table {
 }
 
 .question {
+    position: absolute;
+    top: 30%;
     font-size: 70pt;
 }
 
