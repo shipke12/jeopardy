@@ -26,6 +26,11 @@ table {
     font-size: 16pt;
 }
 
+.finalJeopardy {
+    margin: 20px;
+    color: white;
+}
+
 table, tr, td, th {
     font-size: 18pt;
     border-collapse: collapse;
@@ -40,4 +45,8 @@ td {
 a {
     color: yellow;
     font-size: 36pt;
+}
+
+a:visited {
+    color: orange;
 }
