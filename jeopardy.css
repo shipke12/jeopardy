@@ -12,8 +12,15 @@
     color: yellow;
 }
 
-table, tr, td{
-    border: 1px solid yellow;
+table {
+    border: 3px solid yellow;
+    padding: 20px;
+    font-size: 18pt;
+}
+
+tr, td {
+    border-top: 3px solid yellow;
+    border-right: 1px solid yellow;
     padding: 20px;
     font-size: 18pt;
 }
