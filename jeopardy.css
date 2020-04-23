@@ -12,7 +12,6 @@ table {
 }
 
 .question {
-    position: absolute;
     font-size: 70pt;
     top: 50%;
 }
