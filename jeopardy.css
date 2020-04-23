@@ -18,6 +18,14 @@ table, tr, td {
     padding: 20px 10px;
 }
 
+td {
+    width: 20%;
+}
+
+tr {
+    height: 20%;
+}
+
 a {
     color: yellow;
     font-size: 36pt;
