@@ -16,6 +16,14 @@ table {
     font-size: 70pt;
 }
 
+#answer {
+    display: none;
+}
+
+#return-button {
+    display: none;
+}
+
 table, tr, td, th {
     font-size: 18pt;
     border-collapse: collapse;
