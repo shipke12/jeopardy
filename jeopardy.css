@@ -12,7 +12,9 @@ table {
 }
 
 .question {
-    font-size: 80pt;
+    position: absolute;
+    font-size: 70pt;
+    top: 50%;
 }
 
 table, tr, td, th {
