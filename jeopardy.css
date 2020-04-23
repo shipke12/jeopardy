@@ -11,11 +11,11 @@ table {
     height: 100%;
 }
 
-table, tr, td {
+table, tr, td, hr {
     font-size: 18pt;
     border-collapse: collapse;
     border: 8px solid black;
-    padding: 20px 10px;
+    padding: 40px 10px;
 }
 
 td {
