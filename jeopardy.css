@@ -24,7 +24,7 @@ a {
     color: yellow;
 }
 
-#top {
+#top > td {
     font-size: 36pt;
     padding: 30px;
 }
