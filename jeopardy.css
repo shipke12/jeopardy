@@ -12,16 +12,8 @@ table {
 }
 
 .question {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin-top: 20%;
     font-size: 70pt;
-    flex-grow: 1;
-}
-
-.box {
-    height: 20%;
-    flex-grow: 1;
 }
 
 table, tr, td, th {
