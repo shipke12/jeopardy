@@ -16,6 +16,12 @@ table {
     flex-direction: row;
     justify-content: space-around;
     font-size: 70pt;
+    flex-grow: 1;
+}
+
+.box {
+    height: 20%;
+    flex-grow: 1;
 }
 
 table, tr, td, th {
