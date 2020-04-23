@@ -1,7 +1,13 @@
-﻿body
-{
+﻿
+.board {
     background-color: blue;
+}
+
+.board a {
     color: yellow;
-    font-family: sans-serif;
+}
+
+table {
+    border-color: yellow;
 }
 
