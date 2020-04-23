@@ -13,7 +13,7 @@ table {
 
 .question {
     font-size: 70pt;
-    margin-top: 50%;
+    margin: 50%;
 }
 
 table, tr, td, th {
