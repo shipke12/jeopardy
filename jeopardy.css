@@ -10,11 +10,7 @@
     padding: 80px;
 }
 
-.category > th, td, tr {
-    padding: 80px;
-}
-
-.category > tbody {
+.category > table {
     height: 900px;
 }
 
