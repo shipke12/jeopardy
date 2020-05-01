@@ -14,12 +14,8 @@
 }
 
 .category > table {
-    width: 400px;
+    width: 700px;
     height: 700px;
-}
-
-.category > table > td {
-    font-size: 28pt;
 }
 
 table {
