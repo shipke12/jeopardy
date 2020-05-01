@@ -8,6 +8,9 @@
 
 .category {
     padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .category > table {
