@@ -24,8 +24,15 @@ table {
 }
 
 .question {
-    margin-top: 20%;
     font-size: 70pt;
+}
+
+.question > #answer {
+    margin-top: 20%;
+}
+
+.question > #question {
+    margin-top: 20%;
 }
 
 #answer {
