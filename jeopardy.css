@@ -31,12 +31,6 @@ table {
     margin-top: 20%;
 }
 
-.multipleChoice {
-    margin-left: 5%;
-    font-size: 30pt;
-    margin-right: 5%;
-}
-
 #answer {
     display: none;
 }
