@@ -35,8 +35,9 @@ table {
     margin-top: 20%;
 }
 
-.question > span {
+.multipleChoice {
     margin-left: 5%;
+    font-size: 30pt;
 }
 
 #answer {
