@@ -6,6 +6,6 @@ const multipleChoice = document.getElementById('multiple-choice');
 question.addEventListener('click', () => {
     question.setAttribute('style', 'display: none');
     answer.setAttribute('style', 'display: block');
-    multipleChoice.setAttribute('style', 'display: none');
     returnButton.setAttribute('style', 'display: block');
+    multipleChoice.setAttribute('style', 'display: block');
 })
