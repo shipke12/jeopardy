@@ -27,10 +27,6 @@ table {
     font-size: 70pt;
 }
 
-.question > #answer {
-    margin-top: 15%;
-}
-
 .question > #question {
     margin-top: 20%;
 }
