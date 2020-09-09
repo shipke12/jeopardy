@@ -2,8 +2,11 @@
 
 <script>
     var i = 0;
-    function buttonClick() {
-        document.getElementById('inc').value = ++i;
+    function increment() {
+        document.getElementById('teamOne').value = ++i;
+    }
+    function decrement() {
+        document.getElementById('teamTwo').value = --i;
     }
 </script>
 
@@ -81,11 +84,11 @@
     </table>
     <div class="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
-        <button class="button button1" onclick="buttonClick()">+1</button>
-        <a>Team 1: <input type="text" id="inc" value="0"></a>
+        <button class="button button1" onclick="increment()">+1</button>
+        <a>Team 1: <input type="text" id="teamOne" value="0"></a>
         <button class="button button2">-1</button>
         <button class="button button1">+1</button>
-        <a>Team 2: </a>
+        <a>Team 2: <input type="text" id="teamTwo" value="0"></a>
         <button class="button button2">-1</button>
     </div>
 </body>
