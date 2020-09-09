@@ -54,11 +54,6 @@ table, tr, td, th {
     padding: 40px 10px;
 }
 
-tr {
-    width: 20%;
-    height: 15%;
-}
-
 a {
     color: yellow;
     font-size: 48pt;
