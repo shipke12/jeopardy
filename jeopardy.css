@@ -48,7 +48,7 @@ table {
 }
 
 table, tr, td, th {
-    font-size: 18pt;
+    font-size: 20pt;
     border-collapse: collapse;
     border: 8px solid black;
 }
