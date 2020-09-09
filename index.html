@@ -3,17 +3,17 @@
 <script>
     var i = 0;
     function incrementTeamOne() {
-        document.getElementById('teamOne').value = ++i;
+        document.getElementById('teamOne').value = (i + 100);
     }
     function decrementTeamOne() {
-        document.getElementById('teamOne').value = --i;
+        document.getElementById('teamOne').value = (i - 100);
     }
     var ii = 0;
     function incrementTeamTwo() {
-        document.getElementById('teamTwo').value = ++ii;
+        document.getElementById('teamTwo').value = (ii + 100);
     }
     function decrementTeamTwo() {
-        document.getElementById('teamTwo').value = --ii;
+        document.getElementById('teamTwo').value = (ii - 100);
     }
 </script>
 
@@ -54,49 +54,49 @@
             <th>TRUMP SAYS THE DARNDEST THINGS</th>
         </tr>
         <tr>
-            <td><a href="q1c1.html"><center>CLICK ME</center></a></td> <!--goto question page, set question to:-->
-            <td><a href="q1c2.html"><center>CLICK ME</center></a></td>
-            <td><a href="q1c3.html"><center>CLICK ME</center></a></td>
-            <td><a href="q1c4.html"><center>CLICK ME</center></a></td>
-            <td><a href="q1c5.html"><center>CLICK ME</center></a></td>
+            <td><a href="q1c1.html"><center>100</center></a></td> <!--goto question page, set question to:-->
+            <td><a href="q1c2.html"><center>200</center></a></td>
+            <td><a href="q1c3.html"><center>300</center></a></td>
+            <td><a href="q1c4.html"><center>400</center></a></td>
+            <td><a href="q1c5.html"><center>500</center></a></td>
         </tr>
         <tr>
-            <td><a href="q2c1.html"><center>CLICK ME</center></a></td>
-            <td><a href="q2c2.html"><center>CLICK ME</center></a></td>
-            <td><a href="q2c3.html"><center>CLICK ME</center></a></td>
-            <td><a href="q2c4.html"><center>CLICK ME</center></a></td>
-            <td><a href="q2c5.html"><center>CLICK ME</center></a></td>
+            <td><a href="q2c1.html"><center>100</center></a></td>
+            <td><a href="q2c2.html"><center>200</center></a></td>
+            <td><a href="q2c3.html"><center>300</center></a></td>
+            <td><a href="q2c4.html"><center>400</center></a></td>
+            <td><a href="q2c5.html"><center>500</center></a></td>
         </tr>
         <tr>
-            <td><a href="q3c1.html"><center>CLICK ME</center></a></td>
-            <td><a href="q3c2.html"><center>CLICK ME</center></a></td>
-            <td><a href="q3c3.html"><center>CLICK ME</center></a></td>
-            <td><a href="q3c4.html"><center>CLICK ME</center></a></td>
-            <td><a href="q3c5.html"><center>CLICK ME</center></a></td>
+            <td><a href="q3c1.html"><center>100</center></a></td>
+            <td><a href="q3c2.html"><center>200</center></a></td>
+            <td><a href="q3c3.html"><center>300</center></a></td>
+            <td><a href="q3c4.html"><center>400</center></a></td>
+            <td><a href="q3c5.html"><center>500</center></a></td>
         </tr>
         <tr>
-            <td><a href="q4c1.html"><center>CLICK ME</center></a></td>
-            <td><a href="q4c2.html"><center>CLICK ME</center></a></td>
-            <td><a href="q4c3.html"><center>CLICK ME</center></a></td>
-            <td><a href="q4c4.html"><center>CLICK ME</center></a></td>
-            <td><a href="q4c5.html"><center>CLICK ME</center></a></td>
+            <td><a href="q4c1.html"><center>100</center></a></td>
+            <td><a href="q4c2.html"><center>200</center></a></td>
+            <td><a href="q4c3.html"><center>300</center></a></td>
+            <td><a href="q4c4.html"><center>400</center></a></td>
+            <td><a href="q4c5.html"><center>500</center></a></td>
         </tr>
         <tr>
-            <td><a href="q5c1.html"><center>CLICK ME</center></a></td>
-            <td><a href="q5c2.html"><center>CLICK ME</center></a></td>
-            <td><a href="q5c3.html"><center>CLICK ME</center></a></td>
-            <td><a href="q5c4.html"><center>CLICK ME</center></a></td>
-            <td><a href="q5c5.html"><center>CLICK ME</center></a></td>
+            <td><a href="q5c1.html"><center>100</center></a></td>
+            <td><a href="q5c2.html"><center>200</center></a></td>
+            <td><a href="q5c3.html"><center>300</center></a></td>
+            <td><a href="q5c4.html"><center>400</center></a></td>
+            <td><a href="q5c5.html"><center>500</center></a></td>
         </tr>
     </table>
     <div class="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
-        <button class="button button1" onclick="incrementTeamOne()">+1</button>
+        <button class="button button1" onclick="incrementTeamOne()">+100</button>
         <a>Team 1: <input type="text" id="teamOne" value="0"></a>
-        <button class="button button2" onclick="decrementTeamOne()">-1</button>
-        <button class="button button1" onclick="incrementTeamTwo()">+1</button>
+        <button class="button button2" onclick="decrementTeamOne()">-100</button>
+        <button class="button button1" onclick="incrementTeamTwo()">+100</button>
         <a>Team 2: <input type="text" id="teamTwo" value="0"></a>
-        <button class="button button2" onclick="decrementTeamTwo()">-1</button>
+        <button class="button button2" onclick="decrementTeamTwo()">-100</button>
     </div>
 </body>
 </html>
