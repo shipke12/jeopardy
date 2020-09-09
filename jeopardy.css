@@ -48,13 +48,14 @@ table {
 }
 
 table, tr, td, th {
-    font-size: 70px;
+    font-size: 18pt;
     border-collapse: collapse;
     border: 8px solid black;
     padding: 40px 10px;
 }
 
 td {
+    font-size: 70px;
     width: 20%;
     height: 15%;
 }
