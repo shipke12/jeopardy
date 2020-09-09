@@ -51,7 +51,7 @@ table, tr, td, th {
     font-size: 18pt;
     border-collapse: collapse;
     border: 8px solid black;
-    padding: 10px 40px;
+    padding: 40px 10px;
 }
 
 tr {
