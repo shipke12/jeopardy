@@ -1,5 +1,12 @@
 ﻿<!DOCTYPE html>
 
+<script>
+    var i = 0;
+    function buttonClick() {
+        document.getElementById('inc').value = ++i;
+    }
+</script>
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -74,11 +81,11 @@
     </table>
     <div class="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
-        <button class="button button1">+1</button>
-        <a>Team 1</a>
+        <button class="button button1" onclick="buttonClick()">+1</button>
+        <a>Team 1: <input type="text" id="inc" value="0"></a>
         <button class="button button2">-1</button>
         <button class="button button1">+1</button>
-        <a>Team 2</a>
+        <a>Team 2: </a>
         <button class="button button2">-1</button>
     </div>
 </body>
