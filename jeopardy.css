@@ -54,9 +54,14 @@ table, tr, td, th {
     padding: 40px 10px;
 }
 
+td {
+    width: 20%;
+    height: 15%;
+}
+
 a {
     color: yellow;
-    font-size: 48pt;
+    font-size: 36pt;
 }
 
 a:link {
