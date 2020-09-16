@@ -2,18 +2,24 @@
 
 <script>
     var i = 0;
+    var teamOneScore = 0;
+    var teamTwoScore = 0;
     function incrementTeamOne() {
         document.getElementById('teamOne').value = (i + 100);
+        teamOneScore = document.getElementById('teamOne').value;
     }
     function decrementTeamOne() {
         document.getElementById('teamOne').value = (i - 100);
+        teamOneScore = document.getElementById('teamOne').value;
     }
     var ii = 0;
     function incrementTeamTwo() {
         document.getElementById('teamTwo').value = (ii + 100);
+        teamTwoScore = document.getElementById('teamTwo').value;
     }
     function decrementTeamTwo() {
         document.getElementById('teamTwo').value = (ii - 100);
+        teamTwoScore = document.getElementById('teamTwo').value;
     }
 </script>
 
@@ -54,7 +60,7 @@
             <th>TRUMP</th>
         </tr>
         <tr>
-            <td><a href="q1c1.html"><center>100</center></a></td> <!--goto question page, set question to:-->
+            <td><a href="q1c1.html/${teamOneScore}/${teamTwoScore}"><center>100</center></a></td> <!--goto question page, set question to:-->
             <td><a href="q1c2.html"><center>100</center></a></td>
             <td><a href="q1c3.html"><center>100</center></a></td>
             <td><a href="q1c4.html"><center>100</center></a></td>
