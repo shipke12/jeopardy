@@ -4,13 +4,11 @@
     var teamOneScore = 0;
     var teamTwoScore = 0;
 
-    console.log(sessionStorage.getItem("teamOneScore"));
-
-    if (sessionStorage.getItem("teamOneScore") != null) {
+    if (sessionStorage.getItem("teamOneScore") != "NaN") {
         teamOneScore = sessionStorage.getItem("teamOneScore");
     }
 
-    if (sessionStorage.getItem("teamTwoScore") != null) {
+    if (sessionStorage.getItem("teamTwoScore") != "NaN") {
         teamTwoScore = sessionStorage.getItem("teamTwoScore");
     }
 
