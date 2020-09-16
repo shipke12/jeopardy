@@ -42,10 +42,10 @@
     function incrementTeamTwo() {
         if (sessionStorage.getItem("teamTwoScore") != "NaN") {
             teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            var ii = parseInt(teamTwoScore);
-            document.getElementById('teamTwo').value = (ii + 100);
+            var i = parseInt(teamTwoScore);
+            document.getElementById('teamTwo').value = (i + 100);
             teamTwoScore = document.getElementById('teamTwo').value;
-            sessionStorage.setItem("teamTwoScore", teamOneScore);
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
         } else {
             document.getElementById('teamTwo').value = 100;
             teamTwoScore = document.getElementById('teamTwo').value;
@@ -55,10 +55,10 @@
     function decrementTeamTwo() {
         if (sessionStorage.getItem("teamTwoScore") != "NaN") {
             teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            var ii = parseInt(teamTwoScore);
-            document.getElementById('teamTwo').value = (ii - 100);
+            var i = parseInt(teamTwoScore);
+            document.getElementById('teamTwo').value = (i - 100);
             teamTwoScore = document.getElementById('teamTwo').value;
-            sessionStorage.setItem("teamTwoScore", teamOneScore);
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
         } else {
             document.getElementById('teamTwo').value = -100;
             teamTwoScore = document.getElementById('teamTwo').value;
