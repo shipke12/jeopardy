@@ -4,8 +4,7 @@
     var teamOneScore = 0;
     var teamTwoScore = 0;
 
-    document.getElementById('teamOne').value = teamOneScore;
-    document.getElementById('teamTwo').value = teamTwoScore;
+    console.log(sessionStorage.getItem("teamOneScore"));
 
     if (sessionStorage.getItem("teamOneScore") != null) {
         teamOneScore = sessionStorage.getItem("teamOneScore");
@@ -125,6 +124,10 @@
         <button class="button button1" onclick="incrementTeamTwo()">+100</button>
         <a>Team 2: <input type="text" id="teamTwo" value="0"></a>
         <button class="button button2" onclick="decrementTeamTwo()">-100</button>
+        <script>
+            document.getElementById("teamOne").value = teamOneScore;
+            document.getElementById("teamTwo").value = teamTwoScore;
+        </script>
     </div>
 </body>
 </html>
