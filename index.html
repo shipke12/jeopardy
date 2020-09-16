@@ -12,11 +12,11 @@
         teamTwoScore = sessionStorage.getItem("teamTwoScore");
     }
 
-    var i = 0;
     function incrementTeamOne() {
         if (sessionStorage.getItem("teamOneScore") != "NaN") {
             teamOneScore = sessionStorage.getItem("teamOneScore");
-            document.getElementById('teamOne').value = (teamOneScore + 100);
+            var i = (teamOneScore + 100);
+            document.getElementById('teamOne').value = i;
             teamOneScore = document.getElementById('teamOne').value;
             sessionStorage.setItem("teamOneScore", teamOneScore);
         } else {
@@ -28,7 +28,8 @@
     function decrementTeamOne() {
         if (sessionStorage.getItem("teamOneScore") != "NaN") {
             teamOneScore = sessionStorage.getItem("teamOneScore");
-            document.getElementById('teamOne').value = (teamOneScore - 100);
+            var i = (teamOneScore - 100);
+            document.getElementById('teamOne').value = i;
             teamOneScore = document.getElementById('teamOne').value;
             sessionStorage.setItem("teamOneScore", teamOneScore);
         } else {
@@ -38,11 +39,11 @@
         }
     }
 
-    var ii = 0;
     function incrementTeamTwo() {
         if (sessionStorage.getItem("teamTwoScore") != "NaN") {
             teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            document.getElementById('teamTwo').value = (teamTwoScore + 100);
+            var ii = (teamTwoScore + 100);
+            document.getElementById('teamTwo').value = ii;
             teamTwoScore = document.getElementById('teamTwo').value;
             sessionStorage.setItem("teamTwoScore", teamOneScore);
         } else {
@@ -54,7 +55,8 @@
     function decrementTeamTwo() {
         if (sessionStorage.getItem("teamTwoScore") != "NaN") {
             teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            document.getElementById('teamTwo').value = (teamTwoScore - 100);
+            var ii = (teamTwoScore - 100);
+            document.getElementById('teamTwo').value = ii;
             teamTwoScore = document.getElementById('teamTwo').value;
             sessionStorage.setItem("teamTwoScore", teamOneScore);
         } else {
