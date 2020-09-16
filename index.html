@@ -14,26 +14,54 @@
 
     var i = 0;
     function incrementTeamOne() {
-        document.getElementById('teamOne').value = (i + 100);
-        teamOneScore = document.getElementById('teamOne').value;
-        sessionStorage.setItem("teamOneScore", teamOneScore);
+        if (sessionStorage.getItem("teamOneScore") != "NaN") {
+            teamOneScore = sessionStorage.getItem("teamOneScore");
+            document.getElementById('teamOne').value = (teamOneScore + 100);
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        } else {
+            document.getElementById('teamOne').value = 100;
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        }
     }
     function decrementTeamOne() {
-        document.getElementById('teamOne').value = (i - 100);
-        teamOneScore = document.getElementById('teamOne').value;
-        sessionStorage.setItem("teamOneScore", teamOneScore);
+        if (sessionStorage.getItem("teamOneScore") != "NaN") {
+            teamOneScore = sessionStorage.getItem("teamOneScore");
+            document.getElementById('teamOne').value = (teamOneScore - 100);
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        } else {
+            document.getElementById('teamOne').value = -100;
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        }
     }
 
     var ii = 0;
     function incrementTeamTwo() {
-        document.getElementById('teamTwo').value = (ii + 100);
-        teamTwoScore = document.getElementById('teamTwo').value;
-        sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        if (sessionStorage.getItem("teamTwoScore") != "NaN") {
+            teamTwoScore = sessionStorage.getItem("teamTwoScore");
+            document.getElementById('teamTwo').value = (teamTwoScore + 100);
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamOneScore);
+        } else {
+            document.getElementById('teamTwo').value = 100;
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        }
     }
     function decrementTeamTwo() {
-        document.getElementById('teamTwo').value = (ii - 100);
-        teamTwoScore = document.getElementById('teamTwo').value;
-        sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        if (sessionStorage.getItem("teamTwoScore") != "NaN") {
+            teamTwoScore = sessionStorage.getItem("teamTwoScore");
+            document.getElementById('teamTwo').value = (teamTwoScore - 100);
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamOneScore);
+        } else {
+            document.getElementById('teamTwo').value = -100;
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        }
     }
 
     sessionStorage.setItem("teamOneScore", teamOneScore);
