@@ -15,8 +15,8 @@
     function incrementTeamOne() {
         if (sessionStorage.getItem("teamOneScore") != "NaN") {
             teamOneScore = sessionStorage.getItem("teamOneScore");
-            var i = (teamOneScore + 100);
-            document.getElementById('teamOne').value = i;
+            var i = parseInt(teamOneScore);
+            document.getElementById('teamOne').value = (i + 100);
             teamOneScore = document.getElementById('teamOne').value;
             sessionStorage.setItem("teamOneScore", teamOneScore);
         } else {
@@ -28,8 +28,8 @@
     function decrementTeamOne() {
         if (sessionStorage.getItem("teamOneScore") != "NaN") {
             teamOneScore = sessionStorage.getItem("teamOneScore");
-            var i = (teamOneScore - 100);
-            document.getElementById('teamOne').value = i;
+            var i = parseInt(teamOneScore);
+            document.getElementById('teamOne').value = (i - 100);
             teamOneScore = document.getElementById('teamOne').value;
             sessionStorage.setItem("teamOneScore", teamOneScore);
         } else {
@@ -42,8 +42,8 @@
     function incrementTeamTwo() {
         if (sessionStorage.getItem("teamTwoScore") != "NaN") {
             teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            var ii = (teamTwoScore + 100);
-            document.getElementById('teamTwo').value = ii;
+            var ii = parseInt(teamTwoScore);
+            document.getElementById('teamTwo').value = (ii + 100);
             teamTwoScore = document.getElementById('teamTwo').value;
             sessionStorage.setItem("teamTwoScore", teamOneScore);
         } else {
@@ -55,8 +55,8 @@
     function decrementTeamTwo() {
         if (sessionStorage.getItem("teamTwoScore") != "NaN") {
             teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            var ii = (teamTwoScore - 100);
-            document.getElementById('teamTwo').value = ii;
+            var ii = parseInt(teamTwoScore);
+            document.getElementById('teamTwo').value = (ii - 100);
             teamTwoScore = document.getElementById('teamTwo').value;
             sessionStorage.setItem("teamTwoScore", teamOneScore);
         } else {
