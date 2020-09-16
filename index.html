@@ -3,13 +3,20 @@
 <script>
     var teamOneScore = 0;
     var teamTwoScore = 0;
+
+    document.getElementById('teamOne').value = teamOneScore;
+    document.getElementById('teamTwo').value = teamTwoScore;
+
     if (sessionStorage.getItem("teamOneScore") != null) {
         teamOneScore = sessionStorage.getItem("teamOneScore");
+        document.getElementById('teamOne').value = teamOneScore;
     }
 
     if (sessionStorage.getItem("teamTwoScore") != null) {
         teamTwoScore = sessionStorage.getItem("teamTwoScore");
+        document.getElementById('teamTwo').value = teamTwoScore;
     }
+
     var i = 0;
     function incrementTeamOne() {
         document.getElementById('teamOne').value = (i + 100);
@@ -21,6 +28,7 @@
         teamOneScore = document.getElementById('teamOne').value;
         sessionStorage.setItem("teamOneScore", teamOneScore);
     }
+
     var ii = 0;
     function incrementTeamTwo() {
         document.getElementById('teamTwo').value = (ii + 100);
@@ -32,6 +40,7 @@
         teamTwoScore = document.getElementById('teamTwo').value;
         sessionStorage.setItem("teamTwoScore", teamTwoScore);
     }
+
     sessionStorage.setItem("teamOneScore", teamOneScore);
     sessionStorage.setItem("teamTwoScore", teamTwoScore);
 </script>
