@@ -176,14 +176,19 @@
     </table>
     <div class="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
-        <button id="myBtn" class="button button3">Edit Team Name</button>
+
+        <button id="myBtn">Edit Team Name</button>
+
         <button class="button button1" onclick="incrementTeamOne()">+100</button>
         <p id="Team1">Team 1: <input type="text" id="teamOne" value="0"></p>
-        <button class="button button3" onclick="decrementTeamTwo()">-100</button>
-        <button id="myBtn" class="button button2">Edit Team Name</button>
+        <button class="button button3" onclick="decrementTeamOne()">-100</button>
+
+        <button id="myBtn">Edit Team Name</button>
+
         <button class="button button1" onclick="incrementTeamTwo()">+100</button>
         <p id="Team2">Team 2: <input type="text" id="teamTwo" value="0"></p>
         <button class="button button2" onclick="decrementTeamTwo()">-100</button>
+
         <script>
             document.getElementById("teamOne").value = teamOneScore;
             document.getElementById("teamTwo").value = teamTwoScore;
