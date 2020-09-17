@@ -4,12 +4,16 @@
     var teamOneScore = 0;
     var teamTwoScore = 0;
 
-    if (sessionStorage.getItem("teamOneScore") != "NaN") {
+    if ((sessionStorage.getItem("teamOneScore") != "NaN") || (sessionStorage.getItem("teamOneScore") != "null")) {
         teamOneScore = sessionStorage.getItem("teamOneScore");
+    } else {
+        teamOneScore = 0;
     }
 
-    if (sessionStorage.getItem("teamTwoScore") != "NaN") {
+    if ((sessionStorage.getItem("teamTwoScore") != "NaN") || (sessionStorage.getItem("teamTwoScore") != "null")) {
         teamTwoScore = sessionStorage.getItem("teamTwoScore");
+    } else {
+        teamTwoScore = 0;
     }
 
     //PUT EDIT TEAM NAME FUNCTION HERE
