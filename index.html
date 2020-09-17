@@ -12,60 +12,6 @@
         teamTwoScore = sessionStorage.getItem("teamTwoScore");
     }
 
-    function incrementTeamOne() {
-        if (sessionStorage.getItem("teamOneScore") != "NaN") {
-            teamOneScore = sessionStorage.getItem("teamOneScore");
-            var i = parseInt(teamOneScore);
-            document.getElementById('teamOne').value = (i + 100);
-            teamOneScore = document.getElementById('teamOne').value;
-            sessionStorage.setItem("teamOneScore", teamOneScore);
-        } else {
-            document.getElementById('teamOne').value = 100;
-            teamOneScore = document.getElementById('teamOne').value;
-            sessionStorage.setItem("teamOneScore", teamOneScore);
-        }
-    }
-    function decrementTeamOne() {
-        if (sessionStorage.getItem("teamOneScore") != "NaN") {
-            teamOneScore = sessionStorage.getItem("teamOneScore");
-            var i = parseInt(teamOneScore);
-            document.getElementById('teamOne').value = (i - 100);
-            teamOneScore = document.getElementById('teamOne').value;
-            sessionStorage.setItem("teamOneScore", teamOneScore);
-        } else {
-            document.getElementById('teamOne').value = -100;
-            teamOneScore = document.getElementById('teamOne').value;
-            sessionStorage.setItem("teamOneScore", teamOneScore);
-        }
-    }
-
-    function incrementTeamTwo() {
-        if (sessionStorage.getItem("teamTwoScore") != "NaN") {
-            teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            var i = parseInt(teamTwoScore);
-            document.getElementById('teamTwo').value = (i + 100);
-            teamTwoScore = document.getElementById('teamTwo').value;
-            sessionStorage.setItem("teamTwoScore", teamTwoScore);
-        } else {
-            document.getElementById('teamTwo').value = 100;
-            teamTwoScore = document.getElementById('teamTwo').value;
-            sessionStorage.setItem("teamTwoScore", teamTwoScore);
-        }
-    }
-    function decrementTeamTwo() {
-        if (sessionStorage.getItem("teamTwoScore") != "NaN") {
-            teamTwoScore = sessionStorage.getItem("teamTwoScore");
-            var i = parseInt(teamTwoScore);
-            document.getElementById('teamTwo').value = (i - 100);
-            teamTwoScore = document.getElementById('teamTwo').value;
-            sessionStorage.setItem("teamTwoScore", teamTwoScore);
-        } else {
-            document.getElementById('teamTwo').value = -100;
-            teamTwoScore = document.getElementById('teamTwo').value;
-            sessionStorage.setItem("teamTwoScore", teamTwoScore);
-        }
-    }
-
     // Get the modal
     var modal = document.getElementById("myModal");
 
@@ -94,6 +40,62 @@
 
     function changeTeamName() {
         //document.getElementById("p1").innerHTML = "New text!";
+    }
+
+    //TEAM 1 +100 and -100 functions
+    function incrementTeamOne() {
+        if (sessionStorage.getItem("teamOneScore") != "NaN") {
+            teamOneScore = sessionStorage.getItem("teamOneScore");
+            var i = parseInt(teamOneScore);
+            document.getElementById('teamOne').value = (i + 100);
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        } else {
+            document.getElementById('teamOne').value = 100;
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        }
+    }
+    function decrementTeamOne() {
+        if (sessionStorage.getItem("teamOneScore") != "NaN") {
+            teamOneScore = sessionStorage.getItem("teamOneScore");
+            var i = parseInt(teamOneScore);
+            document.getElementById('teamOne').value = (i - 100);
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        } else {
+            document.getElementById('teamOne').value = -100;
+            teamOneScore = document.getElementById('teamOne').value;
+            sessionStorage.setItem("teamOneScore", teamOneScore);
+        }
+    }
+
+    //TEAM 2 +100 and -100 functions
+    function incrementTeamTwo() {
+        if (sessionStorage.getItem("teamTwoScore") != "NaN") {
+            teamTwoScore = sessionStorage.getItem("teamTwoScore");
+            var i = parseInt(teamTwoScore);
+            document.getElementById('teamTwo').value = (i + 100);
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        } else {
+            document.getElementById('teamTwo').value = 100;
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        }
+    }
+    function decrementTeamTwo() {
+        if (sessionStorage.getItem("teamTwoScore") != "NaN") {
+            teamTwoScore = sessionStorage.getItem("teamTwoScore");
+            var i = parseInt(teamTwoScore);
+            document.getElementById('teamTwo').value = (i - 100);
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        } else {
+            document.getElementById('teamTwo').value = -100;
+            teamTwoScore = document.getElementById('teamTwo').value;
+            sessionStorage.setItem("teamTwoScore", teamTwoScore);
+        }
     }
 
     sessionStorage.setItem("teamOneScore", teamOneScore);
@@ -174,11 +176,11 @@
     </table>
     <div class="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
-        <button id="myBtn" class="button button3" onclick="changeTeamName()">Edit Team Name</button>
+        <button id="myBtn" class="button button3">Edit Team Name</button>
         <button class="button button1" onclick="incrementTeamOne()">+100</button>
         <p id="Team1">Team 1: <input type="text" id="teamOne" value="0"></p>
         <button class="button button3" onclick="decrementTeamTwo()">-100</button>
-        <button id="myBtn" class="button button2" onclick="changeTeamName()">Edit Team Name</button>
+        <button id="myBtn" class="button button2">Edit Team Name</button>
         <button class="button button1" onclick="incrementTeamTwo()">+100</button>
         <p id="Team2">Team 2: <input type="text" id="teamTwo" value="0"></p>
         <button class="button button2" onclick="decrementTeamTwo()">-100</button>
