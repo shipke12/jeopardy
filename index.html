@@ -12,35 +12,7 @@
         teamTwoScore = sessionStorage.getItem("teamTwoScore");
     }
 
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-    function changeTeamName() {
-        //document.getElementById("p1").innerHTML = "New text!";
-    }
+    //PUT EDIT TEAM NAME FUNCTION HERE
 
     //TEAM 1 +100 and -100 functions
     function incrementTeamOne() {
@@ -156,13 +128,11 @@
     <div class="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
 
-        <button id="myBtn">Edit Team Name</button>
 
         <button class="button button1" onclick="incrementTeamOne()">+100</button>
         <p id="Team1">Team 1: <input type="text" id="teamOne" value="0"></p>
         <button class="button button2" onclick="decrementTeamOne()">-100</button>
 
-        <button id="myBtn">Edit Team Name</button>
 
         <button class="button button1" onclick="incrementTeamTwo()">+100</button>
         <p id="Team2">Team 2: <input type="text" id="teamTwo" value="0"></p>
@@ -172,17 +142,6 @@
             document.getElementById("teamOne").value = teamOneScore;
             document.getElementById("teamTwo").value = teamTwoScore;
         </script>
-    </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-        </div>
-
     </div>
 </body>
 </html>
