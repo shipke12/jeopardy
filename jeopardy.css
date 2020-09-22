@@ -97,6 +97,10 @@ a:visited {
     display: inline-block;
 }
 
-.addTeam {
+.addTeamButton {
+    display: none;
+}
+
+.Team1 {
     display: none;
 }

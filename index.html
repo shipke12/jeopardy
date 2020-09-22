@@ -83,14 +83,12 @@
     function addTeam() {
         var teamName = prompt("Please enter your team name", "Team Name");
         if (teamName != null) {
-            var div = document.createElement('div');
-            div.setAttribute('class', 'teams');
-            div.innerHTML = `
+            document.getElementById('Team1').innerHTML = `
                 <button class="button button1" onclick="incrementTeamOne()">+100</button>
                 <a id="Team1">${teamName}: <input type="text" id="teamOne" value="0"></a>
                 <button class="button button2" onclick="decrementTeamOne()">-100</button>
             `;
-            document.getElementById('finalJeopardy').appendChild(div);
+            document.getElementById("Team1").style.display = 'inline';
             document.getElementById("jeopardyTable").style.display = 'inline-block';
             document.getElementById("finalJeopardy").style.display = 'inline-block';
         }
@@ -155,7 +153,7 @@
     <div id="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
 
-        <div id="teams">
+        <div id="Team1">
 
         </div>
 
@@ -166,8 +164,8 @@
             document.getElementById("teamTwo").value = teamTwoScore;
         </script>
     </div>
-    <div>
-        <button id="addTeam" onclick="addTeam()">Add New Team</button>
+    <div id="addTeamButton">
+        <button onclick="addTeam()">Add New Team</button>
     </div>
 </body>
 </html>
