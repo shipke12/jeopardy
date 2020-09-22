@@ -40,6 +40,7 @@ table {
 
 .finalJeopardy {
     margin: 20px;
+    display: inline-block;
 }
 
 .finalJeopardy a {
@@ -90,4 +91,8 @@ a:visited {
 
 .button2 {
     background-color: #FF0000;
+}
+
+.jeopardyTable {
+    display: inline-block;
 }

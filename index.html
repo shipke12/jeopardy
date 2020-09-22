@@ -74,6 +74,11 @@
         }
     }
 
+    function addTeam() {
+        document.getElementById("jeopardyTable").style.display = 'none';
+        document.getElementById("finalJeopardy").style.display = 'none';
+    }
+
     //Store values before exiting the page
     sessionStorage.setItem("teamOneScore", teamOneScore);
     sessionStorage.setItem("teamTwoScore", teamTwoScore);
@@ -86,7 +91,7 @@
     <link rel="stylesheet" href="jeopardy.css" />
 </head>
 <body>
-    <table>
+    <table id="jeopardyTable">
         <tr>
             <th>The Great Console Wars</th>
             <th>Midwestern Lingo</th>
@@ -130,7 +135,7 @@
             <td><a href="Question5Category5.html"><center>500</center></a></td>
         </tr>
     </table>
-    <div class="finalJeopardy">
+    <div id="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
 
 
@@ -143,10 +148,15 @@
         <a id="Team2">Team 2: <input type="text" id="teamTwo" value="0"></a>
         <button class="button button2" onclick="decrementTeamTwo()">-100</button>
 
+        <button onclick="addTeam()">Add Team</button>
+
         <script>
             document.getElementById("teamOne").value = teamOneScore;
             document.getElementById("teamTwo").value = teamTwoScore;
         </script>
+    </div>
+    <div>
+        <p>This is where the team form will go</p>
     </div>
 </body>
 </html>
