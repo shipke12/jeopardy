@@ -150,9 +150,11 @@
     <div id="finalJeopardy">
         <a href="finalCategory.html">Final Jeopardy</a>
 
-        <button id="teamOne" class="button1" onclick="incrementTeamOne()">+100</button>
-        <a id="teamOne">${teamName}: <input type="text" id="teamOne" value="0"></a>
-        <button id="teamOne" class="button2" onclick="decrementTeamOne()">-100</button>
+        <div id="teamOne">
+            <button class="button button1" onclick="incrementTeamOne()">+100</button>
+            <a>${teamName}: <input type="text" id="teamOne" value="0"></a>
+            <button class="button button2" onclick="decrementTeamOne()">-100</button>
+        </div>
 
         <button onclick="hidePage()">Add Team</button>
 
